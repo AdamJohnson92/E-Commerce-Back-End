@@ -42,13 +42,14 @@ router.get('/:id', async (req, res) => {
 
 // create new product
 router.post('/', async (req, res) => {
-  /* req.body should look like this...
+  /* 
+    Template for testing post route
     {
       "product_name": "Basketball",
       "price": 200.00,
       "stock": 3,
       "category_id": 6,
-      "tagIds": [1, 2, 3, 4]
+      "tagIds": [3, 4]
       
     }
   */
