@@ -27,27 +27,23 @@
   This requires ExpressJS, MySql, Sequelize,MySQL2, and dotenv.
 
   ## Usage
-  Users can fire up the server by entering 'node server.js' in the command line while in the root folder of the application. Because this is simply the backend, all other activity for engaging with it is done through Insomnia or some other API development platform. Once the server is live at localhost:3001, users can navigate to  localhost:3001/api and then enter one of three other query parameters: /products, /categories, /tags. Users can perform get requests on any of these queries in Insomnia. Doing so would yield all of the appropriate data (including relational data) for that query. Users can also perform POST requests to add new items in JSON notation (whcih means object keys must exist within double quotes).In addition, users can also search for a single line item in each table, by adding /:id (where :id is the id number for the desired category, product, or tag) to the url. With this query, users can not only perform GET requests on a single line item, but also PUT requests to update a single item, or delete requests to remove an item from the database. 
+  Users can fire up the server by entering 'node server.js' in the command line while in the root folder of the application. Because this is simply the backend, all other activity for engaging with it is done through Insomnia or some other API development platform. Once the server is live at localhost:3001, users can navigate to  'localhost:3001/api' and then enter one of three other query parameters: '/products', '/categories', '/tags'. Users can perform get requests on any of these queries in Insomnia. Doing so would yield all of the appropriate data (including relational data) for that query. Users can also perform POST requests to add new items to each table in JSON notation (which means object keys must exist within double quotes).In addition, users can also search for a single line item in each table, by adding '/:id' (where ':id' is the id number for the desired category, product, or tag) to the url. With this query, users can not only perform GET requests on a single line item, but also PUT requests to update that single item, or delete requests to remove that item from the database. 
 
   ![alt text](./screencap1.PNG)
   ![alt text](./screencap2.PNG)
   
   ## Contribute
-  N/A
+  [GitHub Repo: (https://github.com/https://github.com/AdamJohnson92/E-Commerce-Back-End)]
 
-  [GitHub Repo: (https://github.com/)]
-
-  ## Test
-  N/A
   
   ## Credits
-  Starting code courtesy of Bootcamp Spot, and assistance with clearing up a big that stopped the include products statement to work properly on Tag GET requests courtesy of BCS Substitute Instructor Nathan Shown.
+  Starting code courtesy of Bootcamp Spot, and assistance with clearing up a bug that stopped the 'include: Products' statement to work properly on Tag GET requests courtesy of BCS Substitute Instructor Nathan Shown.
 
   ## License
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
-  This project is licensed under the terms of the MIT license.
+  This project utilizes ExpressJS, MySQL2, and Sequelize, which are licensed under the terms of the MIT license.
 
   ## Questions?
 
