@@ -61,7 +61,6 @@ router.put('/:id', (req, res) => {
     {
       // All the fields you can update and the data attached to the request body.
       category_name: req.body.category_name,
-      
     },
     {
       // Gets the Categorys based on the isbn given in the request parameters
