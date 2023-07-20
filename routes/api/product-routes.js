@@ -37,19 +37,17 @@ router.get('/:id', async (req, res) => {
       res.status(404).json({ message: 'No product found with this id' });
       return;
     }
-
     res.status(200).json(productData);
   } catch (err) {
     res.status(500).json(err);
   }
-
 }
 );
 
 // create new product
 router.post('/', async (req, res) => {
   /* 
-    Template for testing post route
+    Template for testing post route in Insomnia
     {
       "product_name": "Basketball",
       "price": 200.00,
@@ -82,7 +80,6 @@ router.post('/', async (req, res) => {
 
 // update product
 router.put('/:id', (req, res) => {
-  // update product data
   Product.update(req.body, {
     where: {
       id: req.params.id,
